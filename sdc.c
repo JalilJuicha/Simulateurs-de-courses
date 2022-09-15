@@ -5,6 +5,14 @@
 
 // Structures section
 
+struct	Race{
+
+	int numberOfLaps;
+	int currentLap;
+	char firstPlaceDriverName[];
+	char firstPlaceRaceCarColor[];
+};
+
 // Print functions section
 
 // Logic functions section
