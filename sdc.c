@@ -13,6 +13,13 @@ struct	Race{
 	char firstPlaceRaceCarColor[];
 };
 
+struct RaceCar{
+
+	char driverName[];
+	char raceCarColor[];
+	int totalLapTime;
+};
+
 // Print functions section
 
 // Logic functions section
