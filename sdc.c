@@ -9,22 +9,41 @@ struct	Race{
 
 	int numberOfLaps;
 	int currentLap;
-	char firstPlaceDriverName[];
-	char firstPlaceRaceCarColor[];
+	char firstPlaceDriverName[20];
+	char firstPlaceRaceCarColor[20];
 };
 
 struct RaceCar{
 
-	char driverName[];
-	char raceCarColor[];
+	char driverName[20];
+	char raceCarColor[20];
 	int totalLapTime;
 };
 
 // Print functions section
 
+void	printIntro() {
+
+	printf("Bienvenue à notre événement principal, les fans de course numérique ! \n J'espère que tout le monde a pris son goûter car nous allons commencer !\n   =======================================================================\n");
+};
+
 // Logic functions section
 
 int main()
 {
-    srand(time(0));
-};
+    
+	printIntro();
+
+    //srand(time(0));
+
+
+
+
+
+}
+
+
+
+
+
+
