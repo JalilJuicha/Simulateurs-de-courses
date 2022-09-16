@@ -126,9 +126,16 @@ void    startRace(struct RaceCar *raceCar1,struct RaceCar *courseCar2){
 int main()
 {
     
-	printIntro();
-    printCountDown();
-    return 0;
+	    struct RaceCar  race1={"Jalil","Bleu",0};
+        struct RaceCar  race2={"Joe","Noir",0};
+	    printIntro();
+        printCountDown();
+        startRace(&race1,&race2);
+        
+        printf("%d",calculateTimeToCompleteLap());
+    
+
+    return 0;    
     
     //srand(time(0));
 
