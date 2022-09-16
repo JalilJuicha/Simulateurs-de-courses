@@ -19,7 +19,7 @@ struct	Race{
 	char firstPlaceRaceCarColor[20];
 };
 
-struct RaceCar{
+struct  RaceCar{
 
 	char driverName[20];
 	char raceCarColor[20];
@@ -43,31 +43,33 @@ void    printCountDown(){
     sleep(2);
     printf("%d\n",i);
     }
-    printf("Course!!!");
+    printf("Course!!!\n");
 
 
 
 };
 
+void     printFirstPlaceAfterLap(struct Race race){
+    
+    printf("\n Apres le tour numero %d \n La premiere place est occupee par : %s dans la voiture de course %s !",race.currentLap,race.firstPlaceDriverName,race.firstPlaceRaceCarColor);
+};
+
+
 
 // Logic functions section
+
+
+
+
+///////////
 
 int main()
 {
     
 	printIntro();
     printCountDown();
-
+    return 0;
+    
     //srand(time(0));
 
-
-
-
-
 }
-
-
-
-
-
-
