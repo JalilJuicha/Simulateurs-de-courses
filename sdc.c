@@ -3,6 +3,12 @@
 #include <time.h>
 #include <string.h>
 
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
+
 // Structures section
 
 struct	Race{
@@ -30,8 +36,14 @@ void	printIntro() {
 
 void    printCountDown(){
 
-    printf("Coureurs prets ! Dans ...\n5\n4\n3\n2\n1\n Course !!! \n");
-
+    int i=6;
+    printf("Coureurs prets ! Dans ... \n");
+        while (i>1){
+            i--;
+    sleep(2);
+    printf("%d\n",i);
+    }
+    printf("Course!!!");
 
 
 
