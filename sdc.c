@@ -74,6 +74,12 @@ int     calculateTimeToCompleteLap(){
     return  vitesse+ acceleration+nerves;
 };
 
+void    updateRaceCar(struct RaceCar *raceCar){
+	
+    raceCar->totalLapTime+=calculateTimeToCompleteLap();
+	
+};
+
 
 
 ///////////
