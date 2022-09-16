@@ -55,6 +55,10 @@ void     printFirstPlaceAfterLap(struct Race race){
 };
 
 
+void    printCongratulation(struct Race race){
+    printf("Felicitons tous  %s dans la voiture de course %s , pour son incroyable performance.\n C'etait vraiment une belle course et bonne nuit a tous !\n",race.firstPlaceDriverName,race.firstPlaceRaceCarColor);
+};
+
 
 // Logic functions section
 
