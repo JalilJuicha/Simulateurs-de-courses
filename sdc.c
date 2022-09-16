@@ -81,6 +81,22 @@ void    updateRaceCar(struct RaceCar *raceCar){
 };
 
 
+void    updateFirstPlace(struct Race *race,struct RaceCar *raceCar1,struct RaceCar *raceCar2){
+
+    if (raceCar1->totalLapTime<= raceCar2->totalLapTime){
+    	strcpy(race->firstPlaceDriverName,raceCar1->driverName);
+
+    	strcpy(race->firstPlaceRaceCarColor,raceCar1->raceCarColor);
+    	printFirstPlaceAfterLap(*race);
+
+	}else if (raceCar1->totalLapTime > raceCar2->totalLapTime) {
+		strcpy(race->firstPlaceDriverName,raceCar2->driverName);
+		strcpy(race->firstPlaceRaceCarColor,raceCar2->raceCarColor);
+    }
+    race->currentLap++;
+};
+
+
 
 ///////////
 
