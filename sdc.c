@@ -63,6 +63,17 @@ void    printCongratulation(struct Race race){
 // Logic functions section
 
 
+int     calculateTimeToCompleteLap(){
+	srand(time(0));
+	//to get value between to numbers we use (rand() % (max - min +1) + min)
+	
+    int vitesse=(rand() % (3 - 1 +1) + 1);
+	int acceleration=(rand() % (3 - 1 +1) + 1);
+	int nerves=(rand() % (3 - 1 +1) + 1);
+	
+    return  vitesse+ acceleration+nerves;
+};
+
 
 
 ///////////
